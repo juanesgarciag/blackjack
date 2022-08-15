@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Jack</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <header class="titulo">Black Jack</header>
+    
+    <div class="row mt-2">
+        <div class="col text-center">
+            <button id="btnNuevo" class="btn btn-warning">Nuevo Juego</button>
+            <button id="btnPedir" disabled="disabled" class="btn btn-primary">Pedir Carta</button>
+            <button id="btnDetener" disabled="disabled" class="btn btn-danger">Detener</button>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="row container ">
+        <div class="col carta-center">
+            <h1>Juagador 1-<small>0</small></h1>
+            <div id="jugador-cartas" class="divCartas">
+                <!-- Carta inyectada -->
+            </div>
+        </div>
+    </div>
+
+    <div class="row container mt-2">
+        <div class="col carta-center">
+            <h1>Computadora -<small>0</small></h1>
+            <div id="computadora-cartas" class="divCartas">
+                <!--  Carta inyectada  -->
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./assets/js/underscore-min.js"></script>
+    <script src="./assets/js/juego.js"></script>
+    <script>
+        document.querySelector('#btnNuevo').addEventListener('click', () => {
+            moduloBlackJack.nuevoJuego();
+        })
+    </script>
+</body>
+</html>

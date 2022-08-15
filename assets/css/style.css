@@ -1,0 +1,43 @@
+html, body{
+    margin: 0;
+    background-color: #5A885A;
+    color: white;
+}
+
+.titulo{
+    text-align: center;
+    color: white;
+    background-color: darkslategray;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.carta{
+    position: relative;
+    width: 120px;
+    left: 100px;
+    margin-left: -75px;
+}
+
+.carta:hover{
+    width: 122px;
+}
+
+.carta-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    margin: 0;
+}
+
+#computadora-cartas, #jugador-cartas{
+    height: 190px;
+}
+
+@media (min-width: 1400px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 100%
+    }
+}
